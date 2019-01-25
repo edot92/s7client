@@ -36,6 +36,16 @@ const Datatypes = {
     formatter: v => new Buffer([v ? 0x01 : 0x00]),
     S7WordLen: snap7.S7WLBit
   },
+ /**
+   * USINT
+   * @type {S7ClientDatatype}
+   */
+  USINT: _gen(1, 'UInt8', snap7.S7WLByte),
+   /**
+   * SINT
+   * @type {S7ClientDatatype}
+   */
+  SINT: _gen(1, 'Int8', snap7.S7WLByte),
 
   /**
    * BYTE
